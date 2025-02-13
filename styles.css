@@ -1,0 +1,36 @@
+/* Thêm style cho ảnh trái tim */
+.heart-image {
+    width: 150px; /* Điều chỉnh kích thước */
+    height: auto;
+    animation: heartbeat 1s infinite;
+}
+
+/* Thêm style cho ảnh vườn hoa */
+.garden-image {
+    width: 100%; /* Chiều rộng bằng với container */
+    max-width: 600px; /* Giới hạn kích thước tối đa */
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Thêm style cho ảnh ong */
+.bee-image {
+    width: 50px; /* Điều chỉnh kích thước */
+    height: auto;
+    position: absolute;
+    animation: fly 3s infinite;
+}
+
+/* Animation cho ong bay */
+@keyframes fly {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/* Animation cho trái tim đập */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
